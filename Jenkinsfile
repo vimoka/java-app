@@ -2,7 +2,7 @@ node {
    
    stage('Code Checkout') { // for display purposes
       // Get some code from a GitHub repository
-git credentialsId: '9c5600a6-c0d3-4e81-a2b3-cca6d7257abb', url: 'https://github.com/pavants52/sonar-scanning-examples.git'
+git credentialsId: '9c5600a6-c0d3-4e81-a2b3-cca6d7257abb', url: 'https://github.com/pavants52/java-app.git'
    }
    stage('Build') {
      withMaven(jdk: 'java-1.8.0-openjdk-amd64 ', maven: 'apache-maven-3.5.2') {
