@@ -364,7 +364,7 @@
                     <path>/petclinic</path>
                 </configuration>
             </plugin>
-            <plugin>
+           /* <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
                 <version>${cobertura.version}</version>
@@ -379,14 +379,14 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>  */
         </plugins>
     </build>
     <reporting>
         <plugins>
 
             <!--  integrate maven-cobertura-plugin to project site  -->
-            <plugin>
+           /* <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
                 <version>${cobertura.version}</version>
@@ -396,7 +396,7 @@
                     </formats>
                     <check/>
                 </configuration>
-            </plugin>
+            </plugin> */
         </plugins>
     </reporting>
     <profiles>
@@ -404,7 +404,7 @@
 			<id>bower-install</id>
 			<build>
 			<plugins>
-				<plugin>
+			/*	<plugin>
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>exec-maven-plugin</artifactId>
 					<executions>
@@ -422,7 +422,7 @@
 						</arguments>
 						<workingDirectory>${basedir}</workingDirectory>
 					</configuration>
-				</plugin>
+				</plugin>   */
 			</plugins>
 		  </build>
 		</profile>
